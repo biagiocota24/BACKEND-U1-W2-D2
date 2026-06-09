@@ -4,8 +4,8 @@ import java.util.*;
 
 public class Main {
 
-    static ArrayList<Integer> creaLista(int N) {
-        ArrayList<Integer> lista = new ArrayList<>();
+    static List<Integer> creaLista(int N) {
+        List<Integer> lista = new ArrayList<>();
         Random random = new Random();
         for (int i = 0; i < N; i++) {
             int numRandom = random.nextInt(100) + 1;
@@ -20,7 +20,7 @@ public class Main {
         return "Main{}";
     }
 
-    static ArrayList<Integer> invertiLista(ArrayList<Integer> array) {
+    static List<Integer> invertiLista(ArrayList<Integer> array) {
         Collections.reverse(array);
         return array;
     }
@@ -38,14 +38,14 @@ public class Main {
     }
 
 
-    public static void main(String[] args) {
+     static void main(String[] args) {
 
-        ArrayList<Integer> lista = creaLista(10);
+        List<Integer> lista = creaLista(10);
         ArrayList<Integer> copiaLista = new ArrayList<>(lista);
 
         System.out.println(lista);
 
-        ArrayList<Integer> listaInversa = invertiLista(copiaLista);
+        List<Integer> listaInversa = invertiLista(copiaLista);
         System.out.println(lista + "" + listaInversa);
 
 //        stampaPariODispari(lista, true);
